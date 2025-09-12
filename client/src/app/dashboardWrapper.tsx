@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Navbar from '@/app/(components)/Navbar'
 
 
 const DashboardWrapper = ({children}:{children:React.ReactNode}) => {
@@ -9,7 +9,7 @@ const DashboardWrapper = ({children}:{children:React.ReactNode}) => {
         sidebar
         <main className='dark:bg-dark-bg flex w-full flex-col bg-gray-50 md:pl-64'>
             {/* navbar */}
-            
+            <Navbar/>
             {children}
         </main>
     </div>
