@@ -6,7 +6,7 @@ export interface initialStateTypes {
 }
 
 const initialState: initialStateTypes = {
-    isSidebarCollapsed: false,
+    isSidebarCollapsed: true,
     isDarkMode: false,
 }
 
