@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 
 // ROUTE IMPORTS
 import projectRoutes from './routes/projectRoutes';
-
+import taskRoutes from './routes/taskRoutes';
 
 // CONFIGURATIONS
 dotenv.config();
@@ -27,6 +27,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/projects', projectRoutes);
+app.use('/tasks', taskRoutes);
 
 // SERVER
 const port = process.env.PORT || 3000;
